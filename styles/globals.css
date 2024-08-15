@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.digit-button, .operation-button {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    color: #d1d5db;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.4s ease;
+    flex: 2;
+    max-width: 33.333%;
+    background-color: #1f2937;
+  }
+  
+  .operation-button {
+    background-color: #a91e1e;
+  }
+  
+  .digit-button:active, .operation-button:active {
+    transform: scale(1.1);
+  }
+  
+  .digit-button:hover, .operation-button:hover {
+    opacity: 0.9;
+  }
